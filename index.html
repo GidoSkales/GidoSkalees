@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Convert to camelCase</title>
+<style>
+*,
+**::before,
+**::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+html {
+	text-rendering: optimizeLegibility;
+	font-family: "Lato", sans-serif;
+	font-size: 1.5rem;
+}
+body {
+	box-sizing: border-box;
+	background: rgb(252, 229, 196);
+}
+.container {
+	margin: 1.5rem;
+	padding: 1.5rem;
+	border: 1px solid #000;
+	max-width: 300px;
+	border-radius: 10px;
+}
+#cont {
+padding: 10px;
+height: auto;
+width: auto;
+resize: none;
+line-height: 1.7;
+}
+.btn {
+	margin: 5px 0px;
+	padding: 10px 20px;
+	background: tomato;
+	border: none;
+	border-radius: 5px;
+	box-shadow: .8px 1.5px .5px 1px rgb(233, 222, 215);
+	cursor: pointer;
+}
+.btn:hover {
+	border: 1px solid #000;
+}
+h5,ul li {
+	font-weight: 300;
+}
+p {
+	text-transform: capitalize;
+}
+h5 {
+	font-style: italic;
+	line-height: 1.4;
+}
+.show {
+	font-weight: 300;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<section>
+<h5>Replace your variable declarations with under_score to javascript camelCase:</h5><br>
+<p style="font-weight: 300;">Test Case:</p>
+<ul>
+<li>ad_ad</li>
+<li>add_add</li>
+
+</ul>
+<input type="text" id="cont"></input><br /><br>
+<button class="btn">Change</button>
+<button class='btn btn-clear'>Clear</button>
+</section>
+<div><br>
+<main class="show"></main>
+</div>
+</div>
+<script src="next.js"></script>
+</body>
+</html>
